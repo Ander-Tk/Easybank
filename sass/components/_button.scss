@@ -1,0 +1,8 @@
+@use '../globals/' as *;
+
+.request-btn{
+    background: linear-gradient(90deg, color(--LimeGreen), color(--BrightCyan));
+    color: color(--White);
+    font-size: $ft-size/1.25;
+    font-weight: 700;
+}

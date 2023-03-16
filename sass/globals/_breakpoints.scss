@@ -1,6 +1,19 @@
-$max: 992px;
+$break: 768px;
 @mixin max-view {
-	@media  (max-width: #{$max}){
+	@media  (max-width: #{$break}){
+		@content;
+	}
+}
+
+@mixin min-view {
+	@media  (min-width: #{$break}){
+		@content;
+	}
+}
+
+$tablet: 992px;
+@mixin tablet-view {
+	@media  (max-width: #{$tablet}){
 		@content;
 	}
 }

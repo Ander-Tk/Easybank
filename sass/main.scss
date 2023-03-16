@@ -3,10 +3,43 @@
 
 body{
     font-family: $ft-psans;
+    font-size: $ft-size;
 }
 
 .hero{
     background-color: color(--VeryLightGray);
+    height: fit-content!important;
+
+    @include min-view(){
+        
+        height: 95vh!important;
+        .mockdiv{
+            overflow: hidden;
+            img{margin-top: -180px;}
+        }
+
+        .hero-text{
+            display: grid;
+            height: 80vh;
+            align-content: center;
+            justify-items: start;
+        }
+    }
+
+    @include max-view(){
+        background-image: url("../images/bg-intro-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-origin: border-box;
+
+        .mockdiv{
+            overflow: hidden;
+            img{
+                margin-top: -180px;
+                width: 100%; height: auto;
+            }
+        }
+    }
 }
 
 .easybank{
