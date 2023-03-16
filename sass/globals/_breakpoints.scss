@@ -1,0 +1,6 @@
+$max: 992px;
+@mixin max-view {
+	@media  (max-width: #{$max}){
+		@content;
+	}
+}

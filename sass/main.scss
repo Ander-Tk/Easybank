@@ -1,0 +1,22 @@
+@use './globals' as *;
+@use './components' as *;
+
+body{
+    font-family: $ft-psans;
+}
+
+.hero{
+    background-color: color(--VeryLightGray);
+}
+
+.easybank{
+    background-color: color(--LightGrayishBlue);
+}
+
+.late-article{
+    background-color: color(--VeryLightGray);
+}
+
+footer{
+    background-color: color(--DarkBlue);
+}
