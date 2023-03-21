@@ -3,6 +3,10 @@
 .request-btn{
     background: linear-gradient(90deg, color(--LimeGreen), color(--BrightCyan));
     color: color(--White);
-    font-size: $ft-size/1.25;
+    font-size: calc($ft-size / 1.25);
     font-weight: 700;
+
+    &:hover{
+        background: linear-gradient(90deg, lighten(color(--LimeGreen), 15%), lighten(color(--BrightCyan), 15%));
+    }
 }

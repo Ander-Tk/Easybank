@@ -31,6 +31,9 @@ header {
   font-size: 14.4px;
   font-weight: 700;
 }
+.request-btn:hover {
+  background: linear-gradient(90deg, #70e18e, #6ccde5);
+}
 
 body {
   font-family: "Public Sans", sans-serif;
@@ -40,6 +43,10 @@ body {
 .hero {
   background-color: hsl(0, 0%, 98%);
   height: fit-content !important;
+  /*
+  background-image: url("../images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  */
 }
 @media (min-width: 768px) {
   .hero {
@@ -78,9 +85,25 @@ body {
 .easybank {
   background-color: hsl(220, 16%, 96%);
 }
+.easybank p {
+  color: hsl(233, 8%, 62%);
+  margin-top: 20px;
+}
 
 .late-article {
   background-color: hsl(0, 0%, 98%);
+}
+.late-article .card-body {
+  background-color: hsl(0, 0%, 100%);
+}
+.late-article .card-body .article-author, .late-article .card-body .text-preview {
+  color: hsl(233, 8%, 62%);
+  margin-top: 20px;
+  font-size: 14.4px;
+}
+.late-article .card-body h5:hover {
+  color: hsl(136, 65%, 51%);
+  cursor: pointer;
 }
 
 footer {
