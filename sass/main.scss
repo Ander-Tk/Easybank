@@ -11,7 +11,11 @@ body{
     height: fit-content!important;
 
     @include min-view(){
-        
+        background-image: url("../images/bg-intro-desktop.svg");
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+        background-position-x: 40vw;
+        background-size: cover;
         height: 95vh!important;
         .mockdiv{
             overflow: hidden;
@@ -44,12 +48,37 @@ body{
 
 .easybank{
     background-color: color(--LightGrayishBlue);
+
+    p{
+        color: color(--GrayishBlue);
+        margin-top: 20px;
+    }
 }
 
 .late-article{
     background-color: color(--VeryLightGray);
-}
 
-footer{
-    background-color: color(--DarkBlue);
+    .card-body{
+        background-color: color(--White);
+        .article-author, .text-preview{
+            color: color(--GrayishBlue);
+            margin-top: 20px;
+            font-size: calc($ft-size / 1.25);
+        }
+        h5:hover{
+            color: color(--LimeGreen);
+            cursor: pointer;
+        }
+    }
+
+    .article-img{
+        height: 30vh;
+        background-size: cover;
+        border-radius: 8px 8px 0 0;
+
+        &.currency{background-image: url("../images/image-currency.jpg");} 
+        &.restaurant{background-image: url("../images/image-restaurant.jpg");} 
+        &.plane{background-image: url("../images/image-plane.jpg");} 
+        &.confetti{background-image: url("../images/image-confetti.jpg");} 
+    }
 }

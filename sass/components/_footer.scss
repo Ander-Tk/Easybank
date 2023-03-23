@@ -1,0 +1,53 @@
+@use '../globals/' as *;
+
+footer{
+    background-color: color(--DarkBlue);
+
+    ul{list-style-type: none;}
+    a{
+        text-decoration: none;
+        color: color(--White);
+        font-size: calc($ft-size / 1.10);
+
+        &:hover{
+            color: color(--LimeGreen);
+        }
+    }
+
+    .social-icon{
+        display: block;
+        width: 24px;
+        height: 24px;
+
+        &.facebook-link{background: url("../images/social/icon-facebook.svg") no-repeat center / contain; }
+        &.facebook-link:hover{
+            background-color: color(--LimeGreen);
+            mask-image: url("../images/social/icon-facebook.svg") no-repeat center / contain;
+        }
+        &.youtube-link{background: url("../images/social/icon-youtube.svg") no-repeat center / contain; }
+        &.youtube-link:hover{
+            background-color: color(--LimeGreen);
+            mask-image: url("../images/social/icon-youtube.svg") no-repeat center / contain;
+        }
+        &.twitter-link {background: url("../images/social/icon-twitter.svg") no-repeat center / contain; }
+        &.twitter-link:hover{
+            background-color: color(--LimeGreen);
+            mask-image: url("../images/social/icon-twitter.svg") no-repeat center / contain;
+        }
+        &.pinterest-link{background: url("../images/social/icon-pinterest.svg") no-repeat center / contain; }
+        &.pinterest-link:hover{
+            background-color: color(--LimeGreen);
+            mask-image: url("../images/social/icon-pinterest.svg") no-repeat center / contain;
+        }
+        &.instagram-link{background: url("../images/social/icon-instagram.svg") no-repeat center / contain; }
+        &.instagram-link:hover{
+            background-color: color(--LimeGreen);
+            mask-image: url("../images/social/icon-instagram.svg") no-repeat center / contain;
+        }
+    }
+
+    .copyright{
+        color: color(--GrayishBlue);
+        font-size: calc($ft-size / 1.15);
+    }
+}
