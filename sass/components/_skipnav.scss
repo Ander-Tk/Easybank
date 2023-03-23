@@ -1,0 +1,14 @@
+@use '../globals/' as *;
+
+.skip-link{
+    text-decoration: none;
+    color: color(--White);
+    background: linear-gradient(90deg, lighten(color(--LimeGreen), 15%), lighten(color(--BrightCyan), 15%));
+    border-radius: 0 0 10px 10px;
+
+    left: 20vw;
+    transform: translateY(-100%);
+	transition: 0.2s transform;
+
+    &:focus{transform: translateY(0);}
+}

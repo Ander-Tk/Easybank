@@ -65,7 +65,7 @@ body{
             margin-top: 20px;
             font-size: calc($ft-size / 1.25);
         }
-        h5:hover{
+        .article-title:hover{
             color: color(--LimeGreen);
             cursor: pointer;
         }

@@ -94,6 +94,19 @@ footer .copyright {
   font-size: 15.652173913px;
 }
 
+.skip-link {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  background: linear-gradient(90deg, #70e18e, #6ccde5);
+  border-radius: 0 0 10px 10px;
+  left: 20vw;
+  transform: translateY(-100%);
+  transition: 0.2s transform;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
@@ -161,7 +174,7 @@ body {
   margin-top: 20px;
   font-size: 14.4px;
 }
-.late-article .card-body h5:hover {
+.late-article .card-body .article-title:hover {
   color: hsl(136, 65%, 51%);
   cursor: pointer;
 }
